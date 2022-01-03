@@ -49,8 +49,8 @@ function inc() {
 }
 
 function puzzle() {
-    var nodes = prompt("Ingrese texto inicial y texto final separados por un espacio")
+    var nodes = prompt("Ingrese texto inicial y texto final separados por un coma")
     if (nodes == null || nodes == '') nodes = 'saco soce';
-    nodes = nodes.split(' ');
+    nodes = nodes.split(',');
     return bestfirst(nodes[0], nodes[1]);
 }
